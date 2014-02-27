@@ -12,6 +12,7 @@
 
 + (NSDateFormatter *)startDateFormatter;
 + (NSDateFormatter *)durationDateFormatter;
++ (NSDateFormatter *)durationHMSDateFormatter;
 + (NSDateFormatter *)taskDateFormatter;
 + (NSDateFormatter *)reportDurationHourFormatter;
 + (NSDateFormatter *)reportDurationMinuteFormatter;

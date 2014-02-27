@@ -44,6 +44,9 @@
 
 - (void)parseDuration:(NSString *)durationComponent {
     self.duration = [[DateFormatHelper durationDateFormatter] dateFromString:durationComponent];
+	if( self.duration == nil ) {
+		self.duration = [[DateFormatHelper durationHMSDateFormatter] dateFromString:durationComponent];
+	}
 }
 
 - (void)parseName:(NSString *)nameComponent {
