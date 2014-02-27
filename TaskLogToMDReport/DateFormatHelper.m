@@ -33,6 +33,17 @@
     return dateFormatter;
 }
 
++ (NSDateFormatter *)durationHMSDateFormatter {
+    static NSDateFormatter *dateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"H'h 'mm'm 'ss's'";
+        dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    });
+    return dateFormatter;
+}
+
 + (NSDateFormatter *)taskDateFormatter {
     static NSDateFormatter *dateFormatter = nil;
     static dispatch_once_t onceToken;
