@@ -11,6 +11,7 @@
 @interface CmdLineOptions ()
 @property (nonatomic, strong) NSString *inputPath;
 @property (nonatomic, strong) NSString *outputPath;
+@property (nonatomic, assign) BOOL showVersion;
 @end
 
 @implementation CmdLineOptions
@@ -33,6 +34,11 @@
         if ([arg hasPrefix:@"-"]) {
             if ([arg isEqualToString:@"-o"]) {
                 nextArgIsOutputFile = YES;
+            }
+
+            if ([arg isEqualToString:@"-v"]) {
+                self.showVersion = YES;
+                break;
             }
         } else {
             if (nextArgIsOutputFile) {

@@ -13,6 +13,8 @@
 @property (nonatomic, readonly, strong) NSString *inputPath;
 @property (nonatomic, readonly, strong) NSString *outputPath;
 
+@property (nonatomic, readonly, assign) BOOL showVersion;
+
 - (id)initWithArgs:(const char **)argv count:(int)argc;
 
 @end

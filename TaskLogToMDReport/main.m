@@ -10,9 +10,21 @@
 #import "CmdLineOptions.h"
 #import "TaskLogConverter.h"
 
+NSString *const AppVersion = @"1.0.1";
+
+void showVersion() {
+    printf("tasklog2md\n");
+    printf("Version: %s\n", [AppVersion cStringUsingEncoding:NSUTF8StringEncoding]);
+}
+
 int main(int argc, const char *argv[]) {
     @autoreleasepool {
         CmdLineOptions *options = [[CmdLineOptions alloc] initWithArgs:argv count:argc];
+
+        if (options.showVersion) {
+            showVersion();
+            return 0;
+        }
         TaskLogConverter *converter = [[TaskLogConverter alloc] initWithOptions:options];
 
         NSError *error = nil;
