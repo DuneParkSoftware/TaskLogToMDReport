@@ -11,6 +11,7 @@ __Known limitations include:__
 - Report task duration times are rounded, and there is currently no option to use exact durations.
 - Report task duration times are hour and minute only, with no option to display seconds.
 - The resulting Markdown report format is static; no templating support.
+- Tasks with the same name are grouped in the report, and their durations are aggregated. Currently there is not an option to disable this.
 
 __Usage:__
 
