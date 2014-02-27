@@ -1,7 +1,9 @@
 TaskLogToMDReport
 =================
 
-Converts a TaskLog export CSV file into a simple Markdown report.
+Converts a [TaskLog](http://fat-apps.com/tasklog-mac/) export CSV file into a simple Markdown report.
+
+[TaskLog](http://fat-apps.com/tasklog-mac/) is a very cool task tracking app by [Fat Apps](http://fat-apps.com/). Check it out!
 
 _This is very early-release software, and may contain unknown bugs._
 
