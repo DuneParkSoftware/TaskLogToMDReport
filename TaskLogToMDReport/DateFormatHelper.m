@@ -38,7 +38,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dateFormatter = [[NSDateFormatter alloc] init];
-        dateFormatter.dateFormat = @"H'h 'mm'm 'ss's'";
+        dateFormatter.dateFormat = @"HH'h 'mm'm 'ss's'";
         dateFormatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
     });
     return dateFormatter;
