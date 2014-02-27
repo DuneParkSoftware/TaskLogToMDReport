@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711C0D7118BE88B9000951C9 /* NSMutableString+AppendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 711C0D7018BE88B9000951C9 /* NSMutableString+AppendLine.m */; };
+		71FD508E18BE2FE8002D1BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FD508D18BE2FE8002D1BDC /* Foundation.framework */; };
+		71FD509118BE2FE8002D1BDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD509018BE2FE8002D1BDC /* main.m */; };
+		71FD509518BE2FE8002D1BDC /* TaskLogToMDReport.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71FD509418BE2FE8002D1BDC /* TaskLogToMDReport.1 */; };
+		71FD509D18BE321D002D1BDC /* CmdLineOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD509C18BE321D002D1BDC /* CmdLineOptions.m */; };
+		71FD50A018BE3B52002D1BDC /* TaskLogConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD509F18BE3B52002D1BDC /* TaskLogConverter.m */; };
+		71FD50A318BE5A2D002D1BDC /* LineTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD50A218BE5A2D002D1BDC /* LineTask.m */; };
+		71FD50A618BE5D76002D1BDC /* DateFormatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD50A518BE5D76002D1BDC /* DateFormatHelper.m */; };
+		71FD50A918BE7338002D1BDC /* TaskReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD50A818BE7338002D1BDC /* TaskReport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71FD508818BE2FE8002D1BDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				71FD509518BE2FE8002D1BDC /* TaskLogToMDReport.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		711C0D6F18BE88B9000951C9 /* NSMutableString+AppendLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+AppendLine.h"; sourceTree = "<group>"; };
+		711C0D7018BE88B9000951C9 /* NSMutableString+AppendLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+AppendLine.m"; sourceTree = "<group>"; };
+		71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TaskLogToMDReport; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FD508D18BE2FE8002D1BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71FD509018BE2FE8002D1BDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71FD509318BE2FE8002D1BDC /* TaskLogToMDReport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskLogToMDReport-Prefix.pch"; sourceTree = "<group>"; };
+		71FD509418BE2FE8002D1BDC /* TaskLogToMDReport.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TaskLogToMDReport.1; sourceTree = "<group>"; };
+		71FD509B18BE321D002D1BDC /* CmdLineOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdLineOptions.h; sourceTree = "<group>"; };
+		71FD509C18BE321D002D1BDC /* CmdLineOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmdLineOptions.m; sourceTree = "<group>"; };
+		71FD509E18BE3B52002D1BDC /* TaskLogConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskLogConverter.h; sourceTree = "<group>"; };
+		71FD509F18BE3B52002D1BDC /* TaskLogConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskLogConverter.m; sourceTree = "<group>"; };
+		71FD50A118BE5A2D002D1BDC /* LineTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineTask.h; sourceTree = "<group>"; };
+		71FD50A218BE5A2D002D1BDC /* LineTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineTask.m; sourceTree = "<group>"; };
+		71FD50A418BE5D76002D1BDC /* DateFormatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatHelper.h; sourceTree = "<group>"; };
+		71FD50A518BE5D76002D1BDC /* DateFormatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatHelper.m; sourceTree = "<group>"; };
+		71FD50A718BE7338002D1BDC /* TaskReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskReport.h; sourceTree = "<group>"; };
+		71FD50A818BE7338002D1BDC /* TaskReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskReport.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71FD508718BE2FE8002D1BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FD508E18BE2FE8002D1BDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FD508118BE2FE8002D1BDC = {
+			isa = PBXGroup;
+			children = (
+				71FD508F18BE2FE8002D1BDC /* TaskLogToMDReport */,
+				71FD508C18BE2FE8002D1BDC /* Frameworks */,
+				71FD508B18BE2FE8002D1BDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71FD508B18BE2FE8002D1BDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71FD508C18BE2FE8002D1BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71FD508D18BE2FE8002D1BDC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71FD508F18BE2FE8002D1BDC /* TaskLogToMDReport */ = {
+			isa = PBXGroup;
+			children = (
+				71FD509B18BE321D002D1BDC /* CmdLineOptions.h */,
+				71FD509C18BE321D002D1BDC /* CmdLineOptions.m */,
+				71FD50A418BE5D76002D1BDC /* DateFormatHelper.h */,
+				71FD50A518BE5D76002D1BDC /* DateFormatHelper.m */,
+				71FD50A118BE5A2D002D1BDC /* LineTask.h */,
+				71FD50A218BE5A2D002D1BDC /* LineTask.m */,
+				71FD509018BE2FE8002D1BDC /* main.m */,
+				711C0D6F18BE88B9000951C9 /* NSMutableString+AppendLine.h */,
+				711C0D7018BE88B9000951C9 /* NSMutableString+AppendLine.m */,
+				71FD509218BE2FE8002D1BDC /* Supporting Files */,
+				71FD509E18BE3B52002D1BDC /* TaskLogConverter.h */,
+				71FD509F18BE3B52002D1BDC /* TaskLogConverter.m */,
+				71FD509418BE2FE8002D1BDC /* TaskLogToMDReport.1 */,
+				71FD50A718BE7338002D1BDC /* TaskReport.h */,
+				71FD50A818BE7338002D1BDC /* TaskReport.m */,
+			);
+			path = TaskLogToMDReport;
+			sourceTree = "<group>";
+		};
+		71FD509218BE2FE8002D1BDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71FD509318BE2FE8002D1BDC /* TaskLogToMDReport-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71FD508918BE2FE8002D1BDC /* TaskLogToMDReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71FD509818BE2FE8002D1BDC /* Build configuration list for PBXNativeTarget "TaskLogToMDReport" */;
+			buildPhases = (
+				71FD508618BE2FE8002D1BDC /* Sources */,
+				71FD508718BE2FE8002D1BDC /* Frameworks */,
+				71FD508818BE2FE8002D1BDC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskLogToMDReport;
+			productName = TaskLogToMDReport;
+			productReference = 71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71FD508218BE2FE8002D1BDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "DuneParkSoftware, LLC.";
+			};
+			buildConfigurationList = 71FD508518BE2FE8002D1BDC /* Build configuration list for PBXProject "TaskLogToMDReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 71FD508118BE2FE8002D1BDC;
+			productRefGroup = 71FD508B18BE2FE8002D1BDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71FD508918BE2FE8002D1BDC /* TaskLogToMDReport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71FD508618BE2FE8002D1BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71FD50A318BE5A2D002D1BDC /* LineTask.m in Sources */,
+				71FD509118BE2FE8002D1BDC /* main.m in Sources */,
+				71FD50A918BE7338002D1BDC /* TaskReport.m in Sources */,
+				711C0D7118BE88B9000951C9 /* NSMutableString+AppendLine.m in Sources */,
+				71FD50A018BE3B52002D1BDC /* TaskLogConverter.m in Sources */,
+				71FD509D18BE321D002D1BDC /* CmdLineOptions.m in Sources */,
+				71FD50A618BE5D76002D1BDC /* DateFormatHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		71FD509618BE2FE8002D1BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		71FD509718BE2FE8002D1BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		71FD509918BE2FE8002D1BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskLogToMDReport/TaskLogToMDReport-Prefix.pch";
+				PRODUCT_NAME = tasklog2md;
+			};
+			name = Debug;
+		};
+		71FD509A18BE2FE8002D1BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskLogToMDReport/TaskLogToMDReport-Prefix.pch";
+				PRODUCT_NAME = tasklog2md;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71FD508518BE2FE8002D1BDC /* Build configuration list for PBXProject "TaskLogToMDReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FD509618BE2FE8002D1BDC /* Debug */,
+				71FD509718BE2FE8002D1BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71FD509818BE2FE8002D1BDC /* Build configuration list for PBXNativeTarget "TaskLogToMDReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71FD509918BE2FE8002D1BDC /* Debug */,
+				71FD509A18BE2FE8002D1BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71FD508218BE2FE8002D1BDC /* Project object */;
+}
