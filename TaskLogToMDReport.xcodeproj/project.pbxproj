@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		711C0D6F18BE88B9000951C9 /* NSMutableString+AppendLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+AppendLine.h"; sourceTree = "<group>"; };
 		711C0D7018BE88B9000951C9 /* NSMutableString+AppendLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+AppendLine.m"; sourceTree = "<group>"; };
-		71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TaskLogToMDReport; sourceTree = BUILT_PRODUCTS_DIR; };
+		71FD508A18BE2FE8002D1BDC /* tasklog2md */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tasklog2md; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FD508D18BE2FE8002D1BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71FD509018BE2FE8002D1BDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71FD509318BE2FE8002D1BDC /* TaskLogToMDReport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskLogToMDReport-Prefix.pch"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		71FD508B18BE2FE8002D1BDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */,
+				71FD508A18BE2FE8002D1BDC /* tasklog2md */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			);
 			name = TaskLogToMDReport;
 			productName = TaskLogToMDReport;
-			productReference = 71FD508A18BE2FE8002D1BDC /* TaskLogToMDReport */;
+			productReference = 71FD508A18BE2FE8002D1BDC /* tasklog2md */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
