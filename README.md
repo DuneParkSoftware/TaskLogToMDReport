@@ -7,7 +7,7 @@ _This is very early-release software, and may contain unknown bugs._
 
 __Known limitations include:__
 
-- Currently only compatible with TaskLog's Export duration format "00:00:00".
+- ~~Currently only compatible with TaskLog's Export duration format "00:00:00".~~ **Fixed by zpasternack. Thanks!!**
 - Report task duration times are rounded, and there is currently no option to use exact durations.
 - Report task duration times are hour and minute only, with no option to display seconds.
 - The resulting Markdown report format is static; no templating support.
