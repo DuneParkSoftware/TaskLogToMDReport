@@ -5,6 +5,14 @@ Converts a [TaskLog](http://fat-apps.com/tasklog-mac/) export CSV file into a si
 
 [TaskLog](http://fat-apps.com/tasklog-mac/) is a very cool task tracking app by [Fat Apps](http://fat-apps.com/). Check it out!
 
+**Export from this:**
+
+![TaskLog Window](Screenshots/TaskLog.png)
+
+**to this:**
+
+![TaskLog MD Report](Screenshots/TaskLogReport.png)
+
 _This is very early-release software, and may contain unknown bugs._
 
 __Known limitations include:__
