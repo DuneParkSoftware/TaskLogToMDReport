@@ -13,6 +13,10 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSDate *date;
 @property (nonatomic, readonly, strong) NSDate *duration;
+@property (nonatomic, readonly) NSInteger hours;
+@property (nonatomic, readonly) NSInteger minutes;
+@property (nonatomic, readonly) NSInteger totalMinutes;
+@property (nonatomic, assign) NSInteger timePercentage;
 
 - (void)addDuration:(NSDate *)duration;
 

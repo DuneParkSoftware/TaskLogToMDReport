@@ -10,29 +10,29 @@
 #import "CmdLineOptions.h"
 #import "TaskLogConverter.h"
 
-NSString *const AppVersion = @"1.0.1";
+NSString *const AppVersion = @"1.1.0";
 
 void showVersion() {
-    printf("tasklog2md\n");
-    printf("Version: %s\n", [AppVersion cStringUsingEncoding:NSUTF8StringEncoding]);
+	printf("tasklog2md\n");
+	printf("Version: %s\n", [AppVersion cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
 int main(int argc, const char *argv[]) {
-    @autoreleasepool {
-        CmdLineOptions *options = [[CmdLineOptions alloc] initWithArgs:argv count:argc];
+	@autoreleasepool {
+		CmdLineOptions *options = [[CmdLineOptions alloc] initWithArgs:argv count:argc];
 
-        if (options.showVersion) {
-            showVersion();
-            return 0;
-        }
-        TaskLogConverter *converter = [[TaskLogConverter alloc] initWithOptions:options];
+		if (options.showVersion) {
+			showVersion();
+			return 0;
+		}
+		TaskLogConverter *converter = [[TaskLogConverter alloc] initWithOptions:options];
 
-        NSError *error = nil;
-        if (![converter convertToMarkdownWithError:&error]) {
-            NSLog(@"ERROR: %@", error.localizedDescription);
-            return (int)error.code;
-        }
-    }
+		NSError *error = nil;
+		if (![converter convertToMarkdownWithError:&error]) {
+			NSLog(@"ERROR: %@", error.localizedDescription);
+			return (int)error.code;
+		}
+	}
 
-    return 0;
+	return 0;
 }
