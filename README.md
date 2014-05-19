@@ -13,6 +13,8 @@ Converts a [TaskLog](http://fat-apps.com/tasklog-mac/) export CSV file into a si
 
 ![TaskLog MD Report](Screenshots/TaskLogReport.png)
 
+_Note: As of version 1.1.0, time percentages are included in the report._
+
 _This is very early-release software, and may contain unknown bugs._
 
 __Known limitations include:__
@@ -22,9 +24,14 @@ __Known limitations include:__
 - Report task duration times are hour and minute only, with no option to display seconds.
 - The resulting Markdown report format is static; no templating support.
 - Tasks with the same name are grouped in the report, and their durations are aggregated. Currently there is not an option to disable this.
+- No option to output usage.
 
 __Usage:__
 
 `> tasklog2md exportFile.csv [-o outputFile.md]`
 
 The resulting file can be opened in a Markdown-compatible viewer or editor, and converted to any other suitable format, such as PDF. The reports can also be archived, shared with collaborators, etc.
+
+`> tasklog2md -v`
+
+Display version.
