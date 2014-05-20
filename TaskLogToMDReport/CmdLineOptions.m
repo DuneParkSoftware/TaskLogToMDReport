@@ -17,60 +17,60 @@
 @implementation CmdLineOptions
 
 - (id)initWithArgs:(const char **)argv count:(int)argc {
-	self = [super init];
-	if (!self) return nil;
+    self = [super init];
+    if (!self) return nil;
 
-	[self parseArgs:argv count:argc];
-	[self expandPaths];
+    [self parseArgs:argv count:argc];
+    [self expandPaths];
 
-	return self;
+    return self;
 }
 
 - (void)parseArgs:(const char **)argv count:(int)argc {
-	BOOL nextArgIsOutputFile = NO;
-	for (int i = 1; i < argc; i++) {
-		NSString *arg = [[NSString alloc] initWithCString:argv[i] encoding:NSUTF8StringEncoding];
+    BOOL nextArgIsOutputFile = NO;
+    for (int i = 1; i < argc; i++) {
+        NSString *arg = [[NSString alloc] initWithCString:argv[i] encoding:NSUTF8StringEncoding];
 
-		if ([arg hasPrefix:@"-"]) {
-			if ([arg isEqualToString:@"-o"]) {
-				nextArgIsOutputFile = YES;
-			}
+        if ([arg hasPrefix:@"-"]) {
+            if ([arg isEqualToString:@"-o"]) {
+                nextArgIsOutputFile = YES;
+            }
 
-			if ([arg isEqualToString:@"-v"]) {
-				self.showVersion = YES;
-				break;
-			}
-		}
-		else {
-			if (nextArgIsOutputFile) {
-				self.outputPath = [arg copy];
-				nextArgIsOutputFile = NO;
-				continue;
-			}
+            if ([arg isEqualToString:@"-v"]) {
+                self.showVersion = YES;
+                break;
+            }
+        }
+        else {
+            if (nextArgIsOutputFile) {
+                self.outputPath = [arg copy];
+                nextArgIsOutputFile = NO;
+                continue;
+            }
 
-			if (!self.inputPath) {
-				self.inputPath = [arg copy];
-			}
-		}
-	}
+            if (!self.inputPath) {
+                self.inputPath = [arg copy];
+            }
+        }
+    }
 }
 
 - (void)expandPaths {
-	if (!self.inputPath) return;
+    if (!self.inputPath) return;
 
-	if ([self.inputPath hasPrefix:@"~"]) {
-		self.inputPath = [self.inputPath stringByExpandingTildeInPath];
-	}
+    if ([self.inputPath hasPrefix:@"~"]) {
+        self.inputPath = [self.inputPath stringByExpandingTildeInPath];
+    }
 
-	if (![self.inputPath isAbsolutePath]) {
-		self.inputPath = [[NSFileManager.defaultManager currentDirectoryPath] stringByAppendingPathComponent:self.inputPath];
-	}
+    if (![self.inputPath isAbsolutePath]) {
+        self.inputPath = [[NSFileManager.defaultManager currentDirectoryPath] stringByAppendingPathComponent:self.inputPath];
+    }
 
-	if (!self.outputPath) {
-		self.outputPath = [self.inputPath copy];
-		self.outputPath = [self.outputPath stringByDeletingPathExtension];
-		self.outputPath = [self.outputPath stringByAppendingPathExtension:@"md"];
-	}
+    if (!self.outputPath) {
+        self.outputPath = [self.inputPath copy];
+        self.outputPath = [self.outputPath stringByDeletingPathExtension];
+        self.outputPath = [self.outputPath stringByAppendingPathExtension:@"md"];
+    }
 }
 
 @end
