@@ -28,9 +28,11 @@ __Known limitations include:__
 
 __Usage:__
 
-`> tasklog2md exportFile.csv [-o outputFile.md]`
+`> tasklog2md [-d] exportFile.csv [-o outputFile.md]`
 
 The resulting file can be opened in a Markdown-compatible viewer or editor, and converted to any other suitable format, such as PDF. The reports can also be archived, shared with collaborators, etc.
+
+The -d option will remove the source file after successful conversion to markdown.
 
 `> tasklog2md -v`
 
