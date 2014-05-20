@@ -85,6 +85,10 @@
 
     if (![self writeTaskReports:[taskReports copy] toOutputFileWithError:error]) return NO;
 
+    if (self.options.deleteSource) {
+        if (![[NSFileManager defaultManager] removeItemAtPath:self.options.inputPath error:error]) return NO;
+    }
+
     return YES;
 }
 
@@ -98,8 +102,6 @@
          NSString *reportDateString = [DateFormatHelper.taskDateFormatter stringFromDate:taskReport.date];
          if (!dateString || ![dateString isEqualToString:reportDateString]) {
              dateString = [reportDateString copy];
-//	        [md appendLineFormat:@"Task Log — %@", dateString];
-//	        [md appendLine:@"="];
              [md appendLineFormat:@"##Task Log — %@", dateString];
          }
 
