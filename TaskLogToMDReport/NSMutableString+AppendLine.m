@@ -11,18 +11,18 @@
 @implementation NSMutableString (AppendLine)
 
 - (void)appendLine:(NSString *)line {
-	if (line) {
-		[self appendString:[NSString stringWithFormat:@"%@\n", line]];
-	}
+    if (line) {
+        [self appendString:[NSString stringWithFormat:@"%@\n", line]];
+    }
 }
 
 - (void)appendLineFormat:(NSString *)line, ...{
-	if (line) {
-		va_list args;
-		va_start(args, line);
-		[self appendFormat:@"%@\n", [[NSString alloc] initWithFormat:line arguments:args]];
-		va_end(args);
-	}
+    if (line) {
+        va_list args;
+        va_start(args, line);
+        [self appendFormat:@"%@\n", [[NSString alloc] initWithFormat:line arguments:args]];
+        va_end(args);
+    }
 }
 
 @end
