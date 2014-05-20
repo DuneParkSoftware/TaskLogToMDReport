@@ -11,6 +11,7 @@
 @interface CmdLineOptions ()
 @property (nonatomic, strong) NSString *inputPath;
 @property (nonatomic, strong) NSString *outputPath;
+@property (nonatomic, assign) BOOL deleteSource;
 @property (nonatomic, assign) BOOL showVersion;
 @end
 
@@ -32,6 +33,10 @@
         NSString *arg = [[NSString alloc] initWithCString:argv[i] encoding:NSUTF8StringEncoding];
 
         if ([arg hasPrefix:@"-"]) {
+            if ([arg isEqualToString:@"-d"]) {
+                self.deleteSource = YES;
+            }
+
             if ([arg isEqualToString:@"-o"]) {
                 nextArgIsOutputFile = YES;
             }

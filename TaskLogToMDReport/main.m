@@ -10,7 +10,7 @@
 #import "CmdLineOptions.h"
 #import "TaskLogConverter.h"
 
-NSString *const AppVersion = @"1.1.1";
+NSString *const AppVersion = @"1.2.0";
 
 void showVersion() {
     printf("tasklog2md\n");
